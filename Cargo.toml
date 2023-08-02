@@ -1,0 +1,12 @@
+[package]
+name = "lg-discord"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+aws_lambda_events = { version = "0", default-features = false, features = ["apigw"] }
+lambda_runtime = { version = "0", default-features = false }
+tokio = { version = "1", default-features = false, features = ["rt-multi-thread", "macros"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt"] }
